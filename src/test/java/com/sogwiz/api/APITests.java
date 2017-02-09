@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 /**
  * Created by sogwiz on 2/2/17.
  */
-public class APITests {
+public class APITests extends BaseTest {
     @Test(dataProvider = "posts")
     public void testBlogPosts(Integer postNum, boolean flag) throws Exception{
         SogwizAPIService service = new SogwizAPIService();
