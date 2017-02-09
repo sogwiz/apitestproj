@@ -27,7 +27,7 @@ public class SogwizAPIService {
                     .create();
 
             OkHttpClient httpClient = new OkHttpClient.Builder()
-                    //.addInterceptor(new CurbsideRequestInterceptor())
+                    //.addInterceptor(new SogwizRequestRequestInterceptor())
                     //https://www.codefactor.io/repository/github/square/okhttp/files/source/master/okhttp-urlconnection/src/main/java/okhttp3/JavaNetCookieJar.java
                     //.cookieJar(new JavaNetCookieJar(cookieManager))
                     .retryOnConnectionFailure(true)
